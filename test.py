@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[ ]:
 
 
 import cv2
@@ -53,7 +50,7 @@ cap.release()
 cv2.destroyAllWindows()
 
 
-# In[ ]:
+
 
 
 
