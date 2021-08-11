@@ -24,7 +24,7 @@
 
 ## 🌴 Applications
 - Automated detection reduces time spent in manual checking in crowded areas.
-- Can be further imporved into an API which can be used in other applications.
+- Can be further developed into an API which can be used in other applications.
 - Reduces risk of human interference since it can be monitored remotely upon improvement.
 - Model becomes more accurate and faster as we continue to train it with samples.
 
