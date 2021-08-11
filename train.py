@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[2]:
 
 
 from keras.optimizers import RMSprop
@@ -18,7 +15,7 @@ import imutils
 import numpy as np
 
 
-# In[2]:
+
 
 
 model = Sequential([
@@ -36,7 +33,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
 
 
-# In[3]:
+
 
 
 TRAINING_DIR = r"C:\Users\goutami\Desktop\Face\Dataset\train"
@@ -60,13 +57,13 @@ validation_generator = validation_datagen.flow_from_directory(VALIDATION_DIR,
                                                          target_size=(150, 150))
 
 
-# In[4]:
+
 
 
 checkpoint = ModelCheckpoint('model2-{epoch:03d}.model',monitor='val_loss',verbose=0,save_best_only=True,mode='auto')
 
 
-# In[5]:
+
 
 
 history = model.fit_generator(train_generator,
@@ -75,61 +72,6 @@ history = model.fit_generator(train_generator,
                               callbacks=[checkpoint])
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
