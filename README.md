@@ -1,6 +1,6 @@
 <h1 align="center">Face-Mask-Detection</h1>
 <p align="center">
-  <img src="https://media.giphy.com/media/ZFWeQC2sD3rJf26VYp/giphy.gif" width = 90 height = 90>
+  <img src="https://media.giphy.com/media/ZFWeQC2sD3rJf26VYp/giphy.gif" width = 200 height = 200>
 </p>
 <p align="center">
   A machine learning project using python with various packages while training the model to detect mask. 
@@ -42,11 +42,15 @@ Kindly refer to the documentation on these sites to know more about their functi
 - [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 ## ❗ Important Commands
-```py --version```: Check python version<br>
-```py get-pip.py``` : To get pip<br>
-```py -m pip --version```: To check pip version<br>
-```pip install packagename```: To install required packages<br>
-```pip list```: List all the packages
+Python commands
+> ```py --version```: Check python version<br>
+> ```py get-pip.py``` : To get pip<br>
+> ```py -m pip --version```: To check pip version<br>
+
+Pip commands
+> ```pip install packagename```: To install required packages<br>
+> ```pip list```: List all the packages<br>
+> ```pip install --upgrade packagename```: To upgrade specific package 
 
 ## :woman: Contributors 
 <table>
