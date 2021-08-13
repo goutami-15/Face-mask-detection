@@ -52,6 +52,11 @@ Pip commands
 > ```pip list```: List all the packages<br>
 > ```pip install --upgrade packagename```: To upgrade specific package 
 
+## 📺Screenshots
+train.py execution|test.py execution
+:----------------:|:----------------:
+![](https://github.com/goutami-15/Face-mask-detection/blob/main/Project%20in%20action/trainpy_execution.png)|![](https://github.com/goutami-15/Face-mask-detection/blob/main/Project%20in%20action/testpy_execution.png)
+
 ## :woman: Contributors 
 <table>
   <tr>
