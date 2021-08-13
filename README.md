@@ -55,7 +55,13 @@ Pip commands
 ## 📺Screenshots
 train.py execution|test.py execution
 :----------------:|:----------------:
-![](https://github.com/goutami-15/Face-mask-detection/blob/main/Project%20in%20action/trainpy_execution.png)|![](https://github.com/goutami-15/Face-mask-detection/blob/main/Project%20in%20action/testpy_execution.png)
+<img src=https://github.com/goutami-15/Face-mask-detection/blob/main/Project%20in%20action/trainpy_execution.png width = 500 height = 250> |<img src=https://github.com/goutami-15/Face-mask-detection/blob/main/Project%20in%20action/testpy_execution.png width = 500 height =250>
+
+## ⚙️Project in Action
+<p align=center>
+ <img width=350 height = 250 src=https://github.com/goutami-15/Face-mask-detection/blob/main/Project%20in%20action/Detection_Demo.gif>
+</p>
+
 
 ## :woman: Contributors 
 <table>
