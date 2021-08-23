@@ -1,23 +1,18 @@
-
-
-
-from keras.optimizers import RMSprop
-from keras.preprocessing.image import ImageDataGenerator
+# Importing necessary packages
+from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import cv2
-from keras.models import Sequential
-from keras.layers import Conv2D, Input, ZeroPadding2D, BatchNormalization, Activation, MaxPooling2D, Flatten, Dense,Dropout
-from keras.models import Model, load_model
-from keras.callbacks import TensorBoard, ModelCheckpoint
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, Input, ZeroPadding2D, BatchNormalization, Activation, MaxPooling2D, Flatten, Dense,Dropout
+from tensorflow.keras.models import Model, load_model
+from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 from sklearn.utils import shuffle
 import imutils
 import numpy as np
 
-
-
-
-
+#Building the model
 model = Sequential([
     Conv2D(100, (3,3), activation='relu', input_shape=(150, 150, 3)),
     MaxPooling2D(2,2),
@@ -32,11 +27,10 @@ model = Sequential([
 ])
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
 
-
-
-
-
+#Directory from where Images are used to train the dataset
 TRAINING_DIR = r"C:\Users\goutami\Desktop\Face\Dataset\train"
+
+#Generating data from the Images used
 train_datagen = ImageDataGenerator(rescale=1.0/255,
                                    rotation_range=40,
                                    width_shift_range=0.2,
@@ -56,23 +50,11 @@ validation_generator = validation_datagen.flow_from_directory(VALIDATION_DIR,
                                                          batch_size=10, 
                                                          target_size=(150, 150))
 
-
-
-
-
+# Checkpoint creation to save models after each epoch/iteration
 checkpoint = ModelCheckpoint('model2-{epoch:03d}.model',monitor='val_loss',verbose=0,save_best_only=True,mode='auto')
 
-
-
-
-
+# Training the model
 history = model.fit_generator(train_generator,
                               epochs=10,
                               validation_data=validation_generator,
                               callbacks=[checkpoint])
-
-
-
-
-
-
