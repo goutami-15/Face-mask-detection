@@ -66,6 +66,7 @@ train.py execution|test.py execution
 ## :woman: Contributors 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/goutami-15"><img src="https://avatars.githubusercontent.com/u/63532213?v=4" width="100px;" alt=""/><br /><sub><b>Goutami</b></sub></a></td>
+    <td align="center"><a href="https://github.com/goutami-15"><img src="https://avatars.githubusercontent.com/u/63532213?v=4" width="100px;" alt=""/><br /><sub><b>:crown: Goutami<br>(Author)</b></sub></a></td>
+    <td align="center"><a href="https://github.com/vikasgn2"><img src="https://avatars.githubusercontent.com/u/46003079?v=4" width="100px;" alt=""/><br /><sub><b>Vikas<br>(Contributor)</b></sub></a></td>
   </tr>
 </table>
